@@ -25,27 +25,3 @@ button {
   height: inherit;
   width: 80rpx;
 }
-
-.warning {
-  border-top: 1rpx solid #CFD8DC;
-  margin: 16rpx;
-  padding: 32rpx;
-  color: #BDBDBD;
-  font-size: 12px;
-  text-align: center;
-}
-
-.intro {
-  padding: 16rpx;
-  text-align: center;
-  color: white;
-  background-color: #09BB07;
-}
-
-.authed {
-  padding-right: 300rpx;
-}
-
-.authed .warning {
-  border-top: none;
-}

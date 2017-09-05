@@ -1,6 +1,4 @@
 const express = require('express')
-// const config = require('./config/config')
-
 const hello = require('./api/hello')
 const msg = require('./api/msg')
 
@@ -14,7 +12,6 @@ router.get('/', hello.world)
 router.post('/msg', msg.send)
 //短信验证
 router.post('/addinfo', msg.check)
-
 
 
 module.exports = router
