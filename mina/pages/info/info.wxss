@@ -1,0 +1,27 @@
+/* pages/info/info.wxss */
+.container {
+  font-size: 16px;
+}
+
+.section {
+display: flex;
+margin: 16rpx;
+padding: 16rpx;
+border-bottom: 1rpx solid #CFD8DC;
+}
+
+text {
+  width: 200rpx;
+}
+
+button {
+  margin: 16rpx;
+}
+
+.sendMsg {
+  font-size: 12;
+  margin-right: 0;
+  padding: 0;
+  height: inherit;
+  width: 80rpx;
+}
