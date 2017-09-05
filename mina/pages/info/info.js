@@ -10,12 +10,11 @@ Page({
     buttonType: 'default',
     phoneNum: '',
     code: '',
-    realName: ''
+    otherInfo: ''
   },
 
 //手机号部分
   inputPhoneNum: function (e) {
-    console.log("phone");
     let phoneNum = e.detail.value
     if (phoneNum.length === 11) {
       let checkedNum = this.checkPhoneNum(phoneNum)
@@ -109,13 +108,13 @@ Page({
   },
 
 
-//名字
- addName: function (e) {
+//其他信息部分
+ addOtherInfo: function (e) {
    this.setData({
-     realName: e.detail.value
+     otherInfo: e.detail.value
    })
    this.activeButton()
-   console.log("name"+this.data.realName);
+   console.log("otherInfo: "+this.data.otherInfo);
  },
 
 //验证码
@@ -130,9 +129,9 @@ Page({
 
  //按钮
   activeButton: function () {
-    let {phoneNum, code, realName} = this.data
+    let {phoneNum, code, otherInfo} = this.data
     console.log(code);
-    if (phoneNum && code && realName) {
+    if (phoneNum && code && otherInfo) {
       this.setData({
         disabled: false,
         buttonType: 'primary'
@@ -151,7 +150,7 @@ Page({
      data: {
        phoneNum: this.data.phoneNum,
        code: this.data.code,
-       realName: this.data.realName
+       otherInfo: this.data.otherInfo
      },
      header: {
        'content-type': 'application/json'

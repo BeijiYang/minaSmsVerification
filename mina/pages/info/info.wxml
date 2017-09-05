@@ -10,7 +10,7 @@
     </view>
     <view class="section">
       <text>真实姓名</text>
-      <text class="authed">{{realName}}</text>
+      <text class="authed">{{otherInfo}}</text>
     </view>
     <view class="section">
       <text>身份证号</text>
@@ -34,7 +34,7 @@
     </view>
     <view class="section">
       <text>其他信息</text>
-      <input placeholder="需要提交的信息" bindblur="addName" />
+      <input placeholder="需要提交的信息" bindinput="addOtherInfo" />
     </view>
     <!-- <view class="section">
       <text>身份证号</text>
