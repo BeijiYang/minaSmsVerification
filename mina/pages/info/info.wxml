@@ -1,6 +1,6 @@
 <!--info.wxml-->
 <view class="container">
-  
+
   <view class="section">
     <text>手机号码</text>
     <input placeholder="请输入手机号码" type="number" maxlength="11" bindinput="inputPhoneNum" auto-focus />
@@ -10,7 +10,7 @@
 
   <view class="section">
     <text>短信验证</text>
-    <input placeholder="短信验证码" type="number" bindblur="addCode" />
+    <input placeholder="短信验证码" type="number" bindinput="addCode" />
   </view>
 
   <view class="section">
