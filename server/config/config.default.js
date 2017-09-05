@@ -1,7 +1,7 @@
 module.exports = {
   accessKeyId: 'xxx',
   secretAccessKey: 'xxx',
-  queueName: 'xxx'
+  queueName: 'xxx',
   TemplateCode: 'xxx',
   timeLimit: 10
 }
