@@ -58,6 +58,9 @@ exports.check = (req, res) => {
         if (detail) {
           let content = detail.Content
           let pattern = /\d{6}/
+          if(!pattern.exec(content)) {
+            reject('出错 请重新获取验证码')
+          }
           let realCode = pattern.exec(content)[0]
           if (realCode === code) {
             let receiveTime = Date.parse(detail.ReceiveDate)
