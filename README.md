@@ -1,6 +1,7 @@
 # 基于阿里云的 微信小程序 短信验证 功能模块
 Mina + Node.js
 
+**动图效果展示**
 ![动图效果展示](./smsVerificationDemo.gif)
 
 ## 功能
