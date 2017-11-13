@@ -27,5 +27,5 @@ Mina + Node.js
 ## 说明
 * 使用阿里云[短信服务](https://www.aliyun.com/product/sms)，需注册阿里云，创建AccessKeyId 与 AccessKeySecret，申请[短信签名](https://help.aliyun.com/document_detail/55327.html?spm=5176.8195934.507901.5.2uziZ5)和[短信模板](https://help.aliyun.com/document_detail/55330.html?spm=5176.8195934.507901.6.2uziZ5) ，即可使用
 * 将这些信息填入config.default.js中，并改名为config.js
-* 手机号合法性验证部分，为了让代码长期可用，没有针对现行号段进行详细检测，而是只进行了粗略的检测
+* 手机号合法性验证部分，为了让代码长期可用，没有针对现行号段进行详细检测，而是只进行了简略的格式检测
 * **如有帮助，请Star**
