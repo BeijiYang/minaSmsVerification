@@ -22,7 +22,7 @@ exports.send = (req, res) => {
     PhoneNumbers: phoneNum,
     SignName: config.SignName,
     TemplateCode: config.TemplateCode,
-    TemplateParam: `${'{"number":' + smsCode + '}'}`
+    TemplateParam: `{"number":${JSON.stringify(smsCode)}}`
   }).then(function (smsRes) {
     let {Code} = smsRes
     if (Code === 'OK') {
