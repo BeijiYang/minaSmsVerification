@@ -15,14 +15,12 @@ exports.send = (req, res) => {
   let phoneNum = req.body.phoneNum
   // 六位随机验证码
   let smsCode = Math.random().toString().slice(-6)
-  while (smsCode.length !== 6) {
-    smsCode = Math.random().toString().slice(-6)
-  }
+  let jsonifySmsCode = JSON.stringify(smsCode)
   smsClient.sendSMS({
     PhoneNumbers: phoneNum,
     SignName: config.SignName,
     TemplateCode: config.TemplateCode,
-    TemplateParam: `{"number":${JSON.stringify(smsCode)}}`
+    TemplateParam: `{"number":${jsonifySmsCode}}`
   }).then(function (smsRes) {
     let {Code} = smsRes
     if (Code === 'OK') {
