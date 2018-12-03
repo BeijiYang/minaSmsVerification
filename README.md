@@ -3,7 +3,7 @@
 * Front End: WeChat mini program
 * Back End: Express + Alibaba Cloud
 
-**动图效果展示     GIF Demonstration**
+**动图效果展示 / GIF Demonstration**
 
 ![动图效果展示](./smsVerificationDemo.gif)
 
