@@ -26,7 +26,7 @@ exports.send = (req, res) => {
   let smsCode = Math.random().toString().slice(-6)
   let jsonifiedSmsCode = JSON.stringify(smsCode)
 
-  smsClient.sendSMS({ // 有篇文章/笔记里说了个相关的，object.assign 还是啥？
+  smsClient.sendSMS({
     PhoneNumbers: phoneNum,
     SignName: config.SignName,
     TemplateCode: config.TemplateCode,
