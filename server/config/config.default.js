@@ -4,6 +4,7 @@ module.exports = {
   queueName: 'xxx',
   TemplateCode: 'xxx',
   SignName: 'xxx',
-  timeLimit: 10
+  timeLimit: 10,
+  pattern: /\d{6}/
 }
-// 默认十分钟时间限制
+// 默认十分钟时间限制，六位验证码
