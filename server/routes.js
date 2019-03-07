@@ -1,5 +1,4 @@
 const express = require('express')
-const hello = require('./api/hello')
 const msg = require('./api/msg')
 
 const router = express.Router()
